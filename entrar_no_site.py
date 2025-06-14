@@ -19,7 +19,7 @@ driver = webdriver.Chrome(options=options)
 
 try:
     print("🌐 Acessando o site...")
-    driver.get("https://cryptomoedas.streamlit.app/")
+    driver.get("https://cryptomoedasdashboard.streamlit.app/")
 
     WebDriverWait(driver, 60).until(
         EC.presence_of_element_located((By.ID, "root"))
